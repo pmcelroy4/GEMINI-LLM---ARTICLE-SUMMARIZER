@@ -49,7 +49,7 @@ for i in range(len(new_text)):
     prompt = f"""Your task is to act as a Text Summarizer.
     I will provide you text from pages of a book from beginning to end.
     Your job is to summarize the text from these pages in 100 words or less.
-    Don't be conversational. I just need a plain 100 word answer.
+    Don't be conversational. I just need a concise 100 word answer.
     The text will be provided below delimited with triple back ticks.
     ```{new_text[i]}```
     """
@@ -60,4 +60,3 @@ for i in range(len(new_text)):
     print(response)
     summary = summary + ' ' + response + '\n\n'
     
-
